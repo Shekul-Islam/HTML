@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbarr {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img{
+            width: 200px;
+            height: 80px;
+        }
+
+        .menuebar {
+            display: flex;
+            text-align: center;
+            padding:20px;
+           
+        }
+
+        .menuebar a {
+            display: inline-block;
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 10px;
+        }
+
+        .menuebar a:hover {
+            background-color: darkblue;
+        }
+
+        .container {
+            
+            position: relative;
+        }
+
+        
+        .content {
+            position: absolute;
+            overflow: hidden;
+            display: none;
+            
+           
+        }
+
+        .content a{
+            
+            padding: 5px;
+            
+            
+        }
+
+        .container:hover .content  {
+            display: block;
+        }
+
+        .searchbar {
+            display: inline-block;
+            padding: 25px;
+        }
+
+        .containercon {
+            position: relative;
+        }
+        .containercon a {
+            text-decoration: none;
+        }
+
+        .containercon:hover .contentconb  {
+            display: block;
+            background-color: rgb(132, 132, 255);
+        }
+        .contentconb {
+          
+            position: absolute;
+            overflow: hidden;
+            display: none;
+        }
+        .contentconb a{
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+            color: aqua;
+        }
+        .contentconb a:hover {
+            background-color: darkblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbarr">
+        <div class="logo">
+            <img src="Rich man/Richman.png" alt="Richman">
+        </div>
+        <div class="menuebar">
+            <a href="#">Home</a>
+            <a href="#">Menue</a>
+            <div class="container">
+            <a href="#">Service</a>
+
+            <div class="content">
+            <a href="#">Offers</a>
+            <a href="#">Booking</a>
+            <a href="#">Payment</a>
+            </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <input type="text">
+            <button>Search</button>
+        </div>
+    </div>
+<br><br>
+
+<div>
+<label for="#">service</label><br>
+    <select name="#" id="p">
+        
+        <option value="#">offers</option>
+        <option value="#">Booking</option>
+        <option value="#">Payment</option>
+    </select>
+</div>
+
+<br><br>
+
+<div class=" containercon">
+    <a href="#">service</a>
+    <div class=" contentconb">
+        <a href="#">online</a>
+        <a href="#">Offline</a>
+        <a href="#">transaction</a>
+    </div>
+</div>
+
+</body>
+</html>
